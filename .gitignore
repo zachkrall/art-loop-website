@@ -1,0 +1,16 @@
+# os files
+.DS_Store
+
+# dev files
+node_modules/
+package-lock.json
+yarn.lock
+
+# build files
+dist/
+
+# large media files
+*.mp4
+*.psd
+*.mov
+*.ogg

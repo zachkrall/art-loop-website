@@ -1,0 +1,11 @@
+/* AUTHOR */
+Name: Zach Krall
+Site: zachkrall.com
+Twitter: @zachkrall
+Location: New York, N.Y.
+
+/* SITE */
+Last update:
+Language: English
+Doctype: HTML5
+IDE: 
