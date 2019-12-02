@@ -35,7 +35,9 @@
         cycles through a folder containing web based projects. A
         <a href="https://www.raspberrypi.org/">Raspberry Pi</a> connected to
         an HD display on D12 will automatically start artloop once it is
-        turned on.
+        turned on. The
+        <a href="https://github.com/zachkrall/artloop-electron">source code</a>
+        is on GitHub.
       </details>
       <details>
         <summary>Where is it?</summary>
@@ -53,13 +55,14 @@
         <table cellspacing="0">
           <tbody>
             <tr><td>Resolution</td><td>1920 x 1080 pixels</td></tr>
+            <tr><td>OS</td><td>Debian Buster with Raspberry Pi Desktop</td></tr>
             <tr><td>JavaScript</td><td>Supports ES5 syntax natively</td></tr>
-            <tr><td>Video</td><td>.OGV or .WEBM only. (codecs for .MP4 or .MOV are not installed) <a href="https://convertio.co/mp4-ogv/">online converter</a></td></tr>
-            <tr><td>Audio</td><td>N/A, no speakers</td></tr>
             <tr><td>Internet</td><td>N/A</td></tr>
+            <tr><td>Video</td><td>.OGV or .WEBM only. (codecs for .MP4 or .MOV are not installed) <a href="https://convertio.co/mp4-ogv/">online converter</a></td></tr>
+            <tr><td>Audio</td><td>Speakers: N/A<br/>Microphone: N/A</td></tr>
             <tr><td>Webcam</td><td>N/A</td></tr>
             <tr><td>Mouse</td><td>N/A</td></tr>
-            <tr><td>System Fonts</td><td>linux-libertine, noto, crosextra, gentium, liberation, openoffice, dejavu, gentium-basic, liberation2, piboto, droid, inconsolata, lyx, quicksand, freefont, lato, ttf-bitstream-vera<br><br>(artloop <b>does not</b> have: Helvetica, Arial, Verdana, Times New Roman)</td></tr>
+            <tr><td>System Fonts</td><td>linux-libertine, noto, crosextra, gentium, liberation, openoffice, dejavu, gentium-basic, liberation2, piboto, droid, inconsolata, lyx, quicksand, freefont, lato, ttf-bitstream-vera</td></tr>
           </tbody>
         </table>
       </details>
@@ -174,11 +177,15 @@ a.btn:hover{
 }
 
 table{
-  margin-top:0.4em;
+  margin-top:1em;
   font-size: 0.6em;
 }
 td{
   vertical-align: top;
   padding-bottom:0.6em;
+}
+td:first-child{
+  padding-right:0.9em;
+  min-width: 20%;
 }
 </style>
