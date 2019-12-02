@@ -13,7 +13,9 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: Home,
-      props: { msg: "Hello, World" }
+      props: {
+        msg: "Hello, World"
+      }
     },
     {
       path: '*',

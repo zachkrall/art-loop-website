@@ -1,2 +1,6 @@
 // vue.config.js
-module.exports = {}
+module.exports = {
+  chainWebpack: (config) => {
+    config.resolve.symlinks(false)
+  }
+}
