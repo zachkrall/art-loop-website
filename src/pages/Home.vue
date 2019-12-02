@@ -144,6 +144,14 @@ details summary{
   apperance:none;
   list-style-type:none;
 }
+details summary:focus,
+details summary:active{
+  outline:0;
+}
+details summary::marker,
+details summary::-webkit-details-marker{
+  display:none;
+}
 details:hover{
   cursor: pointer;
 }
