@@ -103,6 +103,7 @@ body{
 section{
   padding: var(--padding);
   max-width: 37rem;
+  margin:0 auto 0 0;
 }
 
 .big{
@@ -117,56 +118,6 @@ section{
 
 p{
   padding-bottom:0.5em;
-}
-
-
-/* Details padding */
-details{
-  padding: 0.5em 0;
-}
-/* Border on all but last */
-details:not(:last-of-type){
-  border-bottom:1px solid black;
-}
-/* Pseudo before elements */
-details summary:before{
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 1.3em;
-  padding-right: 0.6em;
-  display:inline;
-  font-weight:normal;
-  content:'+';
-}
-details[open] summary:before{
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 1.3em;
-  padding-right: 0.6em;
-  display:inline;
-  font-weight:normal;
-  content:'–';
-}
-/* Remove outline on focus */
-details summary:focus,
-details summary:active{
-  outline:0;
-}
-/* Pointer on hover */
-details:hover{
-  cursor: pointer;
-}
-summary{
-  /* Firefox Details marker hide */
-  /* list-style-type:none; */
-}
-summary::marker{
-  /* General Marker Hide */
-  display:none;
-  list-style-type:none;
-}
-summary::-webkit-details-marker{
-  /* Safari & iOS Marker Hide */
-  display:none;
-  list-style-type: none;
 }
 
 

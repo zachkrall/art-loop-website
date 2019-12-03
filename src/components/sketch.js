@@ -1,6 +1,5 @@
 export const sketch = (s) => {
 
-  const parent = document.querySelector('#sketch');
   let myShader;
   let time = 0;
 
@@ -8,11 +7,12 @@ export const sketch = (s) => {
     myShader = s.loadShader("/gl/shader.vert", "/gl/shader.frag");
   };
   s.setup = () => {
+    let container = document.querySelector('#sketch');
     let canvas = s.createCanvas(
-                    parent.offsetWidth, parent.offsetHeight,
+                    container.offsetWidth, container.offsetHeight,
                     s.WEBGL
                  );
-    canvas.parent( parent );
+    canvas.parent( container );
     s.noStroke();
   };
   s.draw = () => {
@@ -27,6 +27,7 @@ export const sketch = (s) => {
   };
 
   s.windowResized = () => {
-    s.resizeCanvas(parent.offsetWidth, parent.offsetHeight);
+    let container = document.querySelector('#sketch');
+    s.resizeCanvas(container.offsetWidth, container.offsetHeight);
   };
 };

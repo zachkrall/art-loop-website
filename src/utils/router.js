@@ -14,7 +14,11 @@ export default new Router({
       name: 'Home',
       component: Home,
       props: {
-        msg: "Hello, World"
+        msg: "Hello, World",
+        links: [
+          ['https://forms.gle/a2ToQVSdCgCDSLiY6', 'Submit Work'],
+          ['https://github.com/zachkrall/artloop-templates/','View Templates']
+        ]
       }
     },
     {
